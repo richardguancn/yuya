@@ -2,6 +2,8 @@
 
 > 面向 macOS 14+ 的轻量、原生解压缩工具。遵循苹果人机交互指南（HIG）与简洁设计理念，无需命令行依赖或外部网络，零数据收集，保护隐私。
 
+[简体中文](README.md) | [English](README_EN.md)
+
 [![GitHub Repository](https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github)](https://github.com/richardguancn/yuya)
 [![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)](#)
 [![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](#)
