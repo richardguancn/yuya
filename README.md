@@ -1,71 +1,102 @@
-# Yuya
+# 鱼压 / YUYA
 
-面向 macOS 14 及以上版本的本地压缩工具。创建 ZIP，浏览和解压 ZIP、7Z、RAR、TAR、GZIP、BZIP2、XZ；不需要上传文件或安装命令行压缩软件。
+> 面向 macOS 14+ 的轻量、原生解压缩工具。遵循苹果人机交互指南（HIG）与简洁设计理念，无需命令行依赖或外部网络，零数据收集，保护隐私。
 
-## 使用
+[![GitHub Repository](https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github)](https://github.com/richardguancn/yuya)
+[![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)](#)
+[![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-1. 在“压缩文件”或“解压文件”中拖入文件，也可以按 ⌘O 选择。
-2. 在文件列表中搜索、按名称或大小排序；选中项目后可移除，也可通过右键菜单在访达中定位。
-3. 解压前双击压缩包，或选中后按空格，查看包内目录。预览最多显示前 10,000 项，并保留完整数量统计；单个压缩文件无法提前确定大小时会显示“未知”。
-4. 按 ⌘↵ 选择保存位置并开始处理。处理过程中可取消；完成后可以直接显示结果。
-5. 在“最近记录”中找回最近 30 次完成的结果。清除记录不会删除文件。
+---
 
-每个压缩包解压到独立的新文件夹。遇到同名目录会自动编号；取消或失败会清理尚未完成的临时结果。通过访达“打开方式”或“解压文件”服务打开时，先选择保存位置，多个请求按顺序处理。应用仅访问用户选择的文件；最近记录保留必要的文件访问凭据，供重启后定位结果。
+## 核心特性
 
-压缩偏好提供“更快、均衡、更小”。默认忽略 `.DS_Store`、`._` 文件和 `__MACOSX` 目录；可以关闭此选项。压缩不会删除源文件。
+- **极简原生体验**：遵循《Don't Make Me Think》与《写给大家看的设计书》原则，菜单名称 2–4 字、说明精炼、通俗直观。
+- **中英双语支持**：完整支持简体中文与 Native English，界面随系统语言自动自适应，无翻译腔。
+- **多格式解压与预览**：创建 ZIP；浏览并提取 ZIP、7Z、RAR、TAR、GZIP、BZIP2、XZ。解压前可快速预览压缩包内部文件结构。
+- **纯净压缩**：默认自动过滤 `.DS_Store`、`._*` 资源叉与 `__MACOSX` 目录，避免跨平台共享时的文件杂质。
+- **安全沙盒机制**：运行于 macOS App Sandbox 安全沙盒环境，防护目录遍历与非法路径写入；解压采用原子安全替换，保护原始文件。
+- **系统深度集成**：支持“打开方式”与 macOS 访达（Finder）右键快速操作服务，拖拽即用。
 
-## 范围与限制
+---
 
-- 当前仅创建 ZIP，不创建 7Z 或 RAR。
-- 不支持密码、分卷压缩包或包内文件的单独提取、修改。不能把本次改进理解为与成熟商业工具完全等同。
-- 预览只读取目录，不代表压缩包通过完整性检查；实际解压会读取并检查文件数据。
-- 为防止文件写到目标目录之外，拒绝绝对路径、向上越界的路径和链接、特殊设备文件；也拒绝带反斜线的路径。指向压缩包内部的普通相对链接可以保留。
-- ZIP 用于文件共享，不作为完整 Mac 备份格式；不保证保留所有访达标签、资源叉或访问控制信息。
-- 可处理的具体压缩变体取决于所用 macOS 提供的 libarchive；测试覆盖记录见 [验证记录](VERIFICATION.md)。
+## 使用指南
 
-## 打包
+1. **选择与拖拽**：在“压缩文件”或“解压文件”窗口中直接拖入文件或文件夹，亦可按 `⌘O` 打开选择器。
+2. **列表与预览**：支持在文件列表中搜索、按名称或大小排序；解压前双击压缩包或按空格键可进行包内目录结构预览（支持最多 10,000 项统计）。
+3. **开始处理**：按 `⌘↵`（Command + Return）选择目标位置并开始处理；支持随时取消，并在完成后一键在访达中定位。
+4. **最近记录**：支持回溯最近 30 次任务记录，可快捷定位产物，清理历史记录不会误删原始文件。
 
-在项目目录运行以下命令之一：
+---
 
-```sh
-# ZIP 压缩包
+## 格式支持与安全边界
+
+- **压缩格式**：目前专注于创建跨平台通用的 ZIP 归档。
+- **解压与预览**：支持 ZIP、7Z、RAR、TAR、GZIP、BZIP2、XZ 等主流归档格式（基于底层流式 `libarchive`）。
+- **安全策略**：
+  - 拒绝绝对路径、向上越界的路径（`../`）及非法软硬链接，杜绝 Zip-Slip 目录穿透风险。
+  - 拒绝特殊设备文件及非法字符路径。
+  - 单独临时目录解压并原子发布，任务取消或意外中断时自动清理残留文件。
+
+---
+
+## 本地开发与构建
+
+### 环境要求
+- macOS 14.0 (Sonoma) 或更高版本
+- Xcode 15.0+ 或 Swift 6.0+ 工具链
+
+### 构建与测试
+
+在项目根目录下执行：
+
+```bash
+# 运行单元测试
+./scripts/test.sh
+
+# 文案规范与长度检查
+python3 scripts/check_copy.py
+
+# 快速编译 Release 版本
+./scripts/build.sh
+```
+
+编译产物位于 `build/Build/Products/Release/Yuya.app`。
+
+---
+
+## 打包与分发
+
+### 离线安装包（DMG / ZIP）
+
+```bash
+# 生成 ZIP 压缩分发包
 ./scripts/package.sh
 
-# DMG 安装包
+# 生成 DMG 安装镜像（含 Applications 软链接）
 ./scripts/package-dmg.sh
 ```
 
-两个脚本都会构建应用，并将带版本和适用芯片名称的成品放入 `dist/`。`apple-silicon` 适用于 Apple 芯片，`intel` 适用于 Intel 芯片，`universal` 适用于两者。
+成品将生成至 `dist/` 目录下，包含 Apple Silicon 与 Intel 架构包。
 
-ZIP 会实际解开检查。DMG 会实际挂载检查，其中包含 `Yuya.app` 和“应用程序”入口；双击 DMG 后将 Yuya 拖入“应用程序”即可安装。两种方式都会核对应用完整性和小丑鱼图标。
+### Mac App Store 归档
 
-这是本机临时签名的应用包，尚未进行对外分发签名和公证。
+应用已完整适配 Mac App Store 沙盒权限及内建权限凭据机制：
 
-## Mac App Store
-
-商店版准备为 1.3（6），应用已加入文件访问限制及隐私声明。商店介绍、隐私草稿、真实验收记录和签名归档步骤见 [上架说明](distribution/app-store/上架说明.md)。本地验收可运行：
-
-```sh
+```bash
+# 本地沙盒验证归档
 ./scripts/archive-store.sh local
+
+# 正式发布签名归档（需开发者账号证书）
+./scripts/archive-store.sh signed
 ```
 
-生成 `build/AppStore-local/Yuya.xcarchive`，同时包含 Apple 和 Intel 芯片版本，仅用于本地检查，不能直接上传。正式归档、商店记录和最终提交仍需开发者账号授权及完整的商店资料。
+---
 
-## 构建与验证
+## 仓库地址与开源
 
-本地安装 Xcode 后，在项目目录运行：
+- **GitHub 仓库**：[https://github.com/richardguancn/yuya.git](https://github.com/richardguancn/yuya.git)
+- **开发者主页**：[https://github.com/richardguancn](https://github.com/richardguancn)
+- **问题反馈**：[Issues](https://github.com/richardguancn/yuya/issues)
 
-```sh
-./scripts/build.sh
-./scripts/test.sh
-python3 scripts/benchmark.py
-python3 scripts/check_copy.py
-```
-
-应用输出为 `build/Build/Products/Release/Yuya.app`，采用本机临时签名，尚未进行对外分发签名和公证。
-
-Xcode 与 Swift Package Manager 共用 `Yuya/` 下的界面与业务代码，`Sources/CArchive/` 提供流式文件处理。正式 Mac 应用启用 App Sandbox；直接运行 Swift Package 不具备应用包权限环境，不能代替沙盒实测。压缩使用系统提供的同卷替换目录，只在完整写入后替换目标文件，解压通过私有临时目录和不覆盖方式发布结果。处理不占用主界面线程，进度反馈最多约每秒 10 次，文件图标采用有上限的缓存。中文文件名转换仅影响当前处理线程，不改变界面或并行任务的语言环境。
-
-`gen_project.rb` 用于同步 Xcode 的源文件与资源引用，需要 Ruby 的 `xcodeproj` 库；普通构建不需要执行它。正式应用的分层图标为 `assets/YuyaIcon.icon`，透明小丑鱼前景为 `assets/YuyaForeground.png`；由 Xcode 编译，并由系统生成外框与显示效果。`Yuya/Resources/YuyaClownfish.icns` 用于 Swift Package 运行。重新生成和检查方法见 [图标说明](assets/ICON_DESIGN.md)。界面名称和说明统一维护在 `Yuya/AppCopy.swift`，完整清单见 [文案说明](COPY_GUIDE.md)。
-
-公开声明文件及测试样本的来源与许可见 [第三方说明](THIRD_PARTY_NOTICES.md)。
+欢迎提交 Issue 与 Pull Request 共同改进鱼压！

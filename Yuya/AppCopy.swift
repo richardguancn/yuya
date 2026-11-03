@@ -2,8 +2,14 @@ import Foundation
 
 /// Product-authored labels and explanations in Simplified Chinese and Native English.
 enum AppCopy {
+    /// Override language for rendering previews/screenshots or tests.
+    nonisolated(unsafe) static var languageOverride: String? = nil
+
     /// Determines whether the active preferred language is English.
     static var isEnglish: Bool {
+        if let override = languageOverride {
+            return override.hasPrefix("en")
+        }
         if let preferred = Locale.preferredLanguages.first {
             return preferred.hasPrefix("en") || !preferred.hasPrefix("zh")
         }
