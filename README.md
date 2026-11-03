@@ -11,15 +11,15 @@
 
 ---
 
-## 应用界面 / Screenshots
+## 应用界面
 
-| 快速压缩 (Compress) | 解压与包内预览 (Extract & Preview) |
+| 压缩文件 | 解压与包内预览 |
 | :---: | :---: |
-| ![快速压缩](assets/screenshots/01-compress.png) | ![解压与包内预览](assets/screenshots/02-extract.png) |
+| ![压缩文件](assets/screenshots/01-compress.png) | ![解压与包内预览](assets/screenshots/02-extract.png) |
 
-| 最近任务记录 (History) | 原生英文界面 (Native English) |
-| :---: | :---: |
-| ![最近任务记录](assets/screenshots/03-history.png) | ![Native English](assets/screenshots/en/01-compress.png) |
+| 最近任务记录 |
+| :---: |
+| ![最近任务记录](assets/screenshots/03-history.png) |
 
 ---
 

@@ -17,9 +17,9 @@
 | :---: | :---: |
 | ![Compress Files](assets/screenshots/en/01-compress.png) | ![Extract & Preview](assets/screenshots/en/02-extract.png) |
 
-| Recent Task History | Simplified Chinese UI |
-| :---: | :---: |
-| ![Recent History](assets/screenshots/en/03-history.png) | ![Simplified Chinese](assets/screenshots/01-compress.png) |
+| Recent Task History |
+| :---: |
+| ![Recent History](assets/screenshots/en/03-history.png) |
 
 ---
 
