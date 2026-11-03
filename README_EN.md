@@ -1,13 +1,24 @@
-# YUYA / 鱼压
+<p align="center">
+  <img src="assets/app-icon.png" width="128" height="128" alt="YUYA App Icon" />
+</p>
 
-> A fast, native, and clutter-free archive utility designed for macOS 14+. Built with simplicity and Apple Human Interface Guidelines in mind. No command-line dependencies, no external network requests, zero data collection.
+<h1 align="center">YUYA / 鱼压</h1>
 
-[English](README_EN.md) | [简体中文](README.md)
+<p align="center">
+  <strong>A fast, native, and clutter-free archive utility designed for macOS 14+</strong><br />
+  Built with simplicity and Apple Human Interface Guidelines in mind. No command-line dependencies, no external network requests, zero data collection.
+</p>
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github)](https://github.com/richardguancn/yuya)
-[![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)](#)
-[![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="README_EN.md"><b>English</b></a> | <a href="README.md"><b>简体中文</b></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/richardguancn/yuya"><img src="https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github" alt="GitHub Repository"></a>
+  <img src="https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey" alt="Platform">
+  <img src="https://img.shields.io/badge/Swift-6.0-orange?logo=swift" alt="Swift">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+</p>
 
 ---
 

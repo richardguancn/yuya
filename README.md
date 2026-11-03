@@ -1,13 +1,24 @@
-# 鱼压 / YUYA
+<p align="center">
+  <img src="assets/app-icon.png" width="128" height="128" alt="鱼压图标" />
+</p>
 
-> 面向 macOS 14+ 的轻量、原生解压缩工具。遵循苹果人机交互指南（HIG）与简洁设计理念，无需命令行依赖或外部网络，零数据收集，保护隐私。
+<h1 align="center">鱼压 / YUYA</h1>
 
-[简体中文](README.md) | [English](README_EN.md)
+<p align="center">
+  <strong>面向 macOS 14+ 的轻量、原生解压缩工具</strong><br />
+  遵循苹果人机交互指南（HIG）与简洁设计理念，无需命令行依赖或外部网络，零数据收集，保护隐私。
+</p>
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github)](https://github.com/richardguancn/yuya)
-[![Platform](https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey)](#)
-[![Swift](https://img.shields.io/badge/Swift-6.0-orange?logo=swift)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="README.md"><b>简体中文</b></a> | <a href="README_EN.md"><b>English</b></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/richardguancn/yuya"><img src="https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github" alt="GitHub Repository"></a>
+  <img src="https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey" alt="Platform">
+  <img src="https://img.shields.io/badge/Swift-6.0-orange?logo=swift" alt="Swift">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+</p>
 
 ---
 
