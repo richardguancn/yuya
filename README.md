@@ -9,6 +9,18 @@
 
 ---
 
+## 应用界面 / Screenshots
+
+| 快速压缩 (Compress) | 解压与包内预览 (Extract & Preview) |
+| :---: | :---: |
+| ![快速压缩](assets/screenshots/01-compress.png) | ![解压与包内预览](assets/screenshots/02-extract.png) |
+
+| 最近任务记录 (History) | 原生英文界面 (Native English) |
+| :---: | :---: |
+| ![最近任务记录](assets/screenshots/03-history.png) | ![Native English](assets/screenshots/en/01-compress.png) |
+
+---
+
 ## 核心特性
 
 - **极简原生体验**：遵循《Don't Make Me Think》与《写给大家看的设计书》原则，菜单名称 2–4 字、说明精炼、通俗直观。
