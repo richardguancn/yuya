@@ -1,0 +1,102 @@
+通过：56 个名称均为 2–4 字，52 条说明均不超过 20 字；无缺失引用。
+Building for debugging...
+[Computing dependencies]
+[Pre-planning 1 / 154]
+[Planning deferred tasks]
+[10 / 23] Yuya-product
+[18 / 31] Yuya
+[21 / 37] Yuya-product
+[23 / 37] Yuya-product
+[24 / 37] Yuya-product
+[26 / 37] Yuya-product
+[29 / 41] YuyaTests-product
+[29 / 43] Yuya
+[29 / 43] Yuya-product
+[29 / 43] Yuya
+[29 / 43] Yuya-product
+[31 / 43] Yuya
+[33 / 43] Yuya
+[33 / 43] Yuya-product
+[35 / 43] Yuya-product
+[37 / 42] YuyaTests-product
+[41 / 46] YuyaTests-product
+[43 / 46] YuyaTests-product
+[45 / 49] YuyaTests-product
+[46 / 49] YuyaTests-product
+Build complete! (26.69秒)
+Test Suite 'All tests' started at 2026-10-27 07:21:36.300.
+Test Suite 'YuyaTests.xctest' started at 2026-10-27 07:21:36.303.
+Test Suite 'AppIconTests' started at 2026-10-27 07:21:36.303.
+Test Case '-[YuyaTests.AppIconTests testDeclaredIconLoadsWithExplicitExtension]' started.
+Test Case '-[YuyaTests.AppIconTests testDeclaredIconLoadsWithExplicitExtension]' passed (0.215 seconds).
+Test Case '-[YuyaTests.AppIconTests testDeclaredIconLoadsWithoutExtension]' started.
+Test Case '-[YuyaTests.AppIconTests testDeclaredIconLoadsWithoutExtension]' passed (0.008 seconds).
+Test Case '-[YuyaTests.AppIconTests testMissingIconIsDetected]' started.
+Test Case '-[YuyaTests.AppIconTests testMissingIconIsDetected]' passed (0.003 seconds).
+Test Case '-[YuyaTests.AppIconTests testSwiftPackageCarriesAUsableIcon]' started.
+Test Case '-[YuyaTests.AppIconTests testSwiftPackageCarriesAUsableIcon]' passed (0.005 seconds).
+Test Suite 'AppIconTests' passed at 2026-10-27 07:21:36.535.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.230 (0.232) seconds
+Test Suite 'ArchiveServiceTests' started at 2026-10-27 07:21:36.535.
+Test Case '-[YuyaTests.ArchiveServiceTests testCancelExtractionCleansUpAndKeepsExistingFiles]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testCancelExtractionCleansUpAndKeepsExistingFiles]' passed (0.251 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testCancellationPreservesPreviousOutputAndCleansTemporaryFiles]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testCancellationPreservesPreviousOutputAndCleansTemporaryFiles]' passed (0.336 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testCorruptArchiveLeavesNoOutput]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testCorruptArchiveLeavesNoOutput]' passed (0.004 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testDuplicateNamesRejectAndPreserveExistingArchive]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testDuplicateNamesRejectAndPreserveExistingArchive]' passed (0.006 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testEmptyZipAndSafeHardlink]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testEmptyZipAndSafeHardlink]' passed (0.209 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testExtractionNeverOverwritesExistingFolder]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testExtractionNeverOverwritesExistingFolder]' passed (0.009 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testFolderAndNestedSelectionAreNotDuplicated]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testFolderAndNestedSelectionAreNotDuplicated]' passed (0.015 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testMetadataPreference]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testMetadataPreference]' passed (0.024 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testMissingSourceAndEmptySelectionPreserveOutput]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testMissingSourceAndEmptySelectionPreserveOutput]' passed (0.002 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testOutputInsideSourceAndSameAsSourceAreRejected]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testOutputInsideSourceAndSameAsSourceAreRejected]' passed (0.004 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testPreviewLimitStillCountsAllEntries]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testPreviewLimitStillCountsAllEntries]' passed (0.720 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testRARAnd7ZipFixtures]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testRARAnd7ZipFixtures]' passed (0.010 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testRoundTripUnicodeSpacesEmptyDirectoriesAndMultipleParents]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testRoundTripUnicodeSpacesEmptyDirectoriesAndMultipleParents]' passed (0.021 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testStandaloneCompressedFilesKeepTheirName]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testStandaloneCompressedFilesKeepTheirName]' passed (0.077 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testSymlinkCannotEscapeUsingRedundantPathComponents]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testSymlinkCannotEscapeUsingRedundantPathComponents]' passed (0.077 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testSymlinkEscapeIsRejectedAndInternalLinkRoundTrips]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testSymlinkEscapeIsRejectedAndInternalLinkRoundTrips]' passed (0.088 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testTarGzipBzipAndXZ]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testTarGzipBzipAndXZ]' passed (0.088 seconds).
+Test Case '-[YuyaTests.ArchiveServiceTests testTraversalAndAbsolutePathsAreRejected]' started.
+Test Case '-[YuyaTests.ArchiveServiceTests testTraversalAndAbsolutePathsAreRejected]' passed (0.325 seconds).
+Test Suite 'ArchiveServiceTests' passed at 2026-10-27 07:21:38.807.
+	 Executed 18 tests, with 0 failures (0 unexpected) in 2.268 (2.272) seconds
+Test Suite 'ArchiveViewModelTests' started at 2026-10-27 07:21:38.807.
+Test Case '-[YuyaTests.ArchiveViewModelTests testExternalOpenWaitsForDestinationAndCancelWritesNothing]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testExternalOpenWaitsForDestinationAndCancelWritesNothing]' passed (0.008 seconds).
+Test Case '-[YuyaTests.ArchiveViewModelTests testExternalRequestsWhileBusyAreQueuedAndHistoryIsSaved]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testExternalRequestsWhileBusyAreQueuedAndHistoryIsSaved]' passed (0.025 seconds).
+Test Case '-[YuyaTests.ArchiveViewModelTests testFailedArchiveDoesNotPreventOtherArchivesFromCompleting]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testFailedArchiveDoesNotPreventOtherArchivesFromCompleting]' passed (0.021 seconds).
+Test Case '-[YuyaTests.ArchiveViewModelTests testImportsDeduplicateAndInvalidExtractionCannotStart]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testImportsDeduplicateAndInvalidExtractionCannotStart]' passed (0.016 seconds).
+Test Case '-[YuyaTests.ArchiveViewModelTests testOldHistoryWithoutBookmarksStillLoads]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testOldHistoryWithoutBookmarksStillLoads]' passed (0.001 seconds).
+Test Case '-[YuyaTests.ArchiveViewModelTests testOpenRequestDeliveryCanDrainDuringNotification]' started.
+Test Case '-[YuyaTests.ArchiveViewModelTests testOpenRequestDeliveryCanDrainDuringNotification]' passed (0.001 seconds).
+Test Suite 'ArchiveViewModelTests' passed at 2026-10-27 07:21:38.882.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.073 (0.074) seconds
+Test Suite 'YuyaTests.xctest' passed at 2026-10-27 07:21:38.882.
+	 Executed 28 tests, with 0 failures (0 unexpected) in 2.571 (2.578) seconds
+Test Suite 'All tests' passed at 2026-10-27 07:21:38.882.
+	 Executed 28 tests, with 0 failures (0 unexpected) in 2.571 (2.582) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
+通过：桌面启动使用的 C 语言环境下，中文与空格名称可被独立 ZIP 读取器正确识别，预览和解压内容一致。

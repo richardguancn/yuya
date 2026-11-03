@@ -1,0 +1,104 @@
+通过：55 个名称均为 2–4 字，52 条说明均不超过 20 字；无缺失引用。
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/gdy/Documents/My/App/ai-learning/yuya/Yuya.xcodeproj -scheme Yuya -configuration Release -destination platform=macOS -derivedDataPath /Users/gdy/Documents/My/App/ai-learning/yuya/build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+2026-10-25 17:57:03.939 xcodebuild[25377:66648202] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:00008112-000210DC3678201E, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00008112-000210DC3678201E, name:My Mac }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Yuya' in project 'Yuya' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 4433129152e46426b5fcf9c9fbc16a34
+Build description path: /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/XCBuildData/4433129152e46426b5fcf9c9fbc16a34.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Users/gdy/Documents/My/App/ai-learning/yuya/build/SDKStatCaches.noindex/macosx27.0-26A425-7231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya/Yuya.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Users/gdy/Documents/My/App/ai-learning/yuya/build/SDKStatCaches.noindex/macosx27.0-26A425-7231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+Ld /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya normal (in target 'Yuya' from project 'Yuya')
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release -L/Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release -F/Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release -F/Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release -filelist /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya_lto.o -Xlinker -dependency_info -Xlinker /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya.swiftmodule -larchive -framework Cocoa -o /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya
+
+ProcessInfoPlistFile /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Info.plist /Users/gdy/Documents/My/App/ai-learning/yuya/Yuya/Info.plist (in target 'Yuya' from project 'Yuya')
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya
+    builtin-infoPlistUtility /Users/gdy/Documents/My/App/ai-learning/yuya/Yuya/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/assetcatalog_generated_info.plist -o /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Info.plist
+
+CopySwiftLibs /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app (in target 'Yuya' from project 'Yuya')
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya --scan-folder /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Frameworks --scan-folder /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/PlugIns --scan-folder /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Library/SystemExtensions --scan-folder /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Extensions --scan-folder /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'Yuya' from project 'Yuya')
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Yuya --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A9275 --platform-family macOS --deployment-target 14.0 --bundle-identifier com.gdy.yuya --output /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/Resources --target-triple arm64-apple-macos14.0 --binary-file /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya --dependency-file /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya_dependency_info.dat --stringsdata-file /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya.SwiftFileList --metadata-file-list /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Yuya.DependencyMetadataFileList --static-metadata-file-list /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Yuya.DependencyStaticMetadataFileList --swift-const-vals-list /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/Yuya.build/Release/Yuya.build/Objects-normal/arm64/Yuya.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-25 17:57:19.659 appintentsmetadataprocessor[25501:66649792] Starting appintentsmetadataprocessor export
+2026-10-25 17:57:19.675 appintentsmetadataprocessor[25501:66649792] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+GenerateDSYMFile /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app.dSYM /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya (in target 'Yuya' from project 'Yuya')
+    cd /Users/gdy/Documents/My/App/ai-learning/yuya
+    export PATH\=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Users/gdy/.nvm/versions/node/v26.12.1/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/gdy/.codex/tmp/arg0-macos/codex-arg0BUbnDi:/Users/gdy/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/gdy/.config/kaku/zsh/bin:/Users/gdy/.kimi-code/bin:/Users/gdy/.antigravity-ide/antigravity-ide/bin:/Users/gdy/.local/bin:/Users/gdy/.antigravity/antigravity/bin:/Users/gdy/.bun/bin:/opt/homebrew/opt/node@20/bin:/Users/gdy/Library/pnpm:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/gdy/.cargo/bin:/Applications/Obsidian.app/Contents/MacOS:/Users/gdy/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app/Contents/MacOS/Yuya -o /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app.dSYM
+
+PruneExplicitPrecompiledModules /Users/gdy/Documents/My/App/ai-learning/yuya/build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+
+/Users/gdy/Documents/My/App/ai-learning/yuya/build/Build/Products/Release/Yuya.app: replacing existing signature
+created: /Users/gdy/Documents/My/App/ai-learning/yuya/dist/.Yuya-dmg-24886.dmghdiutil: WARNING: 'hdiutil create -volname -format ...' is deprecated. Please use 'diskutil image create from/blank --volumeName --format ...' instead.
+
+正在检查“Protective Master Boot Record（MBR：0）”的校验和…
+Protective Master Boot Record（MBR：0）：已验证CRC32 $5DCA4569
+正在检查“GPT Header（Primary GPT Header：1）”的校验和…
+    GPT Header（Primary GPT Header：1）：已验证CRC32 $AEE4BB52
+正在检查“GPT Partition Data（Primary GPT Table：2）”的校验和…
+GPT Partition Data（Primary GPT Table：已验证CRC32 $7D266CDE
+正在检查“（Apple_Free：3）”的校验和…
+                      （Apple_Free：3）：已验证CRC32 $00000000
+正在检查“disk image（Apple_HFS：4）”的校验和…
+             disk image（Apple_HFS：4）：已验证CRC32 $6FE8C78F
+正在检查“（Apple_Free：5）”的校验和…
+                      （Apple_Free：5）：已验证CRC32 $00000000
+正在检查“GPT Partition Data（Backup GPT Table：6）”的校验和…
+GPT Partition Data（Backup GPT Table：：已验证CRC32 $7D266CDE
+正在检查“GPT Header（Backup GPT Header：7）”的校验和…
+     GPT Header（Backup GPT Header：7）：已验证CRC32 $1145C23E
+已验证CRC32 $DC332E73
+hdiutil: verify: checksum of "/Users/gdy/Documents/My/App/ai-learning/yuya/dist/.Yuya-dmg-24886.dmg" is VALID
+预计CRC32 $DC332E73
+hdiutil: WARNING: 'hdiutil attach -readonly -nobrowse -mountpoint ...' is deprecated. Please use 'diskutil image attach --readOnly --mountOptions nobrowse --mountPoint ...' instead.
+/dev/disk8          	GUID_partition_scheme          	
+/dev/disk8s1        	Apple_HFS                      	/private/var/folders/6h/rpqn03ds5sb4_jmp35lcbl8h0000gr/T/yuya-dmg.eq3Hon/mounted
+打包完成：/Users/gdy/Documents/My/App/ai-learning/yuya/dist/Yuya-1.2.2-mac-apple-silicon.dmg

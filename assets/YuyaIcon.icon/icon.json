@@ -1,0 +1,38 @@
+{
+  "fill": {
+    "automatic-gradient": "srgb:0.03529,0.29020,0.36471,1.00000"
+  },
+  "groups": [
+    {
+      "name": "Clownfish and zipper",
+      "layers": [
+        {
+          "image-name": "Clownfish.png",
+          "name": "Clownfish",
+          "glass": false,
+          "position": {
+            "scale": 0.91,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.12
+      },
+      "specular": false,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    }
+  ],
+  "supported-platforms": {
+    "squares": [
+      "macOS"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "previous_seconds": [
+    5.987861125031486,
+    5.570279791019857,
+    4.430767666082829
+  ],
+  "current_seconds": [
+    1.3806760001461953,
+    1.2405858330894262,
+    0.9473317908123136
+  ],
+  "input_files": 300,
+  "input_bytes": 1269600,
+  "previous_median_seconds": 5.570279791019857,
+  "current_median_seconds": 1.2405858330894262,
+  "speedup": 4.490039820258313,
+  "verified": "All 6 archives contain exactly the same 300 files and matching SHA-256 digests."
+}

@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FBDFB6714075B4A462BCA2 /* AppCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0452105301502A4E4BFD2 /* AppCopy.swift */; };
+		1F70B9D39A555F4AF1D0AC98 /* CArchive.c in Sources */ = {isa = PBXBuildFile; fileRef = BFA22F5F816FD1F3309CB65E /* CArchive.c */; };
+		21497CBE66D37A06BB32D2A7 /* FileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5A93355B4C1217B85E123 /* FileAccess.swift */; };
+		4293D0D0CBF9F105794ACC6C /* ArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11251F6EFB699A9C306B67 /* ArchiveService.swift */; };
+		65B461F4310A6D4448955397 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41ACFEE68689AA026FA301D /* Cocoa.framework */; };
+		7320C161BB5DDB1D51CAD379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B147D4C30DAE92F39B9165 /* ContentView.swift */; };
+		76B736D64B2FB2430FC0956C /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DAC8A55289E01DE4A31374 /* AppIcon.swift */; };
+		9D5112E6A24FE7591C38E544 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663559C0EFE7142E1D06D92 /* PrivacyView.swift */; };
+		AACB3C4652D3C79B72B4B179 /* YuyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD38E6492ACA4EE28E9E2A4 /* YuyaApp.swift */; };
+		CB01ABC9F6540251DA55A2BF /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824B111B74891C95A073D244 /* ArchiveViewModel.swift */; };
+		D93E21B73DF5E876F129EF6A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5DF5762EA5ADFFB6B8C4A782 /* PrivacyInfo.xcprivacy */; };
+		DB0A69786875BCB4B478E9EB /* YuyaIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 0B105A9EA5875DCEE7414D7B /* YuyaIcon.icon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B105A9EA5875DCEE7414D7B /* YuyaIcon.icon */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.iconcomposer.icon; path = YuyaIcon.icon; sourceTree = "<group>"; };
+		400252F6868E6F69F4D16A31 /* Yuya.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = Yuya.entitlements; sourceTree = "<group>"; };
+		53B147D4C30DAE92F39B9165 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5DF5762EA5ADFFB6B8C4A782 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		77C5A93355B4C1217B85E123 /* FileAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileAccess.swift; sourceTree = "<group>"; };
+		824B111B74891C95A073D244 /* ArchiveViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArchiveViewModel.swift; sourceTree = "<group>"; };
+		8DD38E6492ACA4EE28E9E2A4 /* YuyaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YuyaApp.swift; sourceTree = "<group>"; };
+		9FF0452105301502A4E4BFD2 /* AppCopy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppCopy.swift; sourceTree = "<group>"; };
+		A50F015A58BE66FD838BA7C9 /* Yuya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yuya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41ACFEE68689AA026FA301D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B663559C0EFE7142E1D06D92 /* PrivacyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		BFA22F5F816FD1F3309CB65E /* CArchive.c */ = {isa = PBXFileReference; includeInIndex = 1; path = CArchive.c; sourceTree = "<group>"; };
+		C8DAC8A55289E01DE4A31374 /* AppIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		DF11251F6EFB699A9C306B67 /* ArchiveService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArchiveService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FF3240946525F83E05D2F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B461F4310A6D4448955397 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2334E74D3DA987C1FD6FA0 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0B105A9EA5875DCEE7414D7B /* YuyaIcon.icon */,
+			);
+			name = assets;
+			path = assets;
+			sourceTree = "<group>";
+		};
+		487D8018CDCD53EF69325D45 /* CArchive */ = {
+			isa = PBXGroup;
+			children = (
+				BFA22F5F816FD1F3309CB65E /* CArchive.c */,
+			);
+			name = CArchive;
+			path = Sources/CArchive;
+			sourceTree = "<group>";
+		};
+		7351719ED7A3610628174D56 /* Yuya */ = {
+			isa = PBXGroup;
+			children = (
+				8DD38E6492ACA4EE28E9E2A4 /* YuyaApp.swift */,
+				53B147D4C30DAE92F39B9165 /* ContentView.swift */,
+				824B111B74891C95A073D244 /* ArchiveViewModel.swift */,
+				DF11251F6EFB699A9C306B67 /* ArchiveService.swift */,
+				9FF0452105301502A4E4BFD2 /* AppCopy.swift */,
+				C8DAC8A55289E01DE4A31374 /* AppIcon.swift */,
+				B13D3FB30AE7E476E5516430 /* Resources */,
+				77C5A93355B4C1217B85E123 /* FileAccess.swift */,
+				5DF5762EA5ADFFB6B8C4A782 /* PrivacyInfo.xcprivacy */,
+				400252F6868E6F69F4D16A31 /* Yuya.entitlements */,
+				B663559C0EFE7142E1D06D92 /* PrivacyView.swift */,
+			);
+			name = Yuya;
+			path = Yuya;
+			sourceTree = "<group>";
+		};
+		ADFB6BD6734B8C1457932203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A50F015A58BE66FD838BA7C9 /* Yuya.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B13D3FB30AE7E476E5516430 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6E8E7A412C2F09E4193C27B /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				B41ACFEE68689AA026FA301D /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		D946418234E711907F988A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E8E7A412C2F09E4193C27B /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB90753A72D1304FDFC1C534 = {
+			isa = PBXGroup;
+			children = (
+				ADFB6BD6734B8C1457932203 /* Products */,
+				D946418234E711907F988A4E /* Frameworks */,
+				7351719ED7A3610628174D56 /* Yuya */,
+				487D8018CDCD53EF69325D45 /* CArchive */,
+				3A2334E74D3DA987C1FD6FA0 /* assets */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0D5C1994F8C16B0257DDFFA /* Yuya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF45E3BE1C6388A64845F8D /* Build configuration list for PBXNativeTarget "Yuya" */;
+			buildPhases = (
+				35E7077E2452CF32A4E94211 /* Sources */,
+				0FF3240946525F83E05D2F54 /* Frameworks */,
+				B4F44CAC3D3AAA3418A78C52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yuya;
+			productName = Yuya;
+			productReference = A50F015A58BE66FD838BA7C9 /* Yuya.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F1B0EF745DFBB20A677D9B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = CACA528D571587C98A211E34 /* Build configuration list for PBXProject "Yuya" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB90753A72D1304FDFC1C534;
+			minimizedProjectReferenceProxies = 0;
+			productRefGroup = ADFB6BD6734B8C1457932203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0D5C1994F8C16B0257DDFFA /* Yuya */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4F44CAC3D3AAA3418A78C52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A69786875BCB4B478E9EB /* YuyaIcon.icon in Resources */,
+				D93E21B73DF5E876F129EF6A /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E7077E2452CF32A4E94211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACB3C4652D3C79B72B4B179 /* YuyaApp.swift in Sources */,
+				7320C161BB5DDB1D51CAD379 /* ContentView.swift in Sources */,
+				CB01ABC9F6540251DA55A2BF /* ArchiveViewModel.swift in Sources */,
+				4293D0D0CBF9F105794ACC6C /* ArchiveService.swift in Sources */,
+				1F70B9D39A555F4AF1D0AC98 /* CArchive.c in Sources */,
+				00FBDFB6714075B4A462BCA2 /* AppCopy.swift in Sources */,
+				76B736D64B2FB2430FC0956C /* AppIcon.swift in Sources */,
+				21497CBE66D37A06BB32D2A7 /* FileAccess.swift in Sources */,
+				9D5112E6A24FE7591C38E544 /* PrivacyView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42C36D83A77C838C088DC905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = YuyaIcon;
+				CODE_SIGN_ENTITLEMENTS = Yuya/Yuya.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CArchive/include",
+				);
+				INFOPLIST_FILE = Yuya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-larchive",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdy.yuya;
+				PRODUCT_NAME = Yuya;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(SRCROOT)/Sources/CArchive/include";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		5D6A307B7A37EECDAECA1DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6C0431540C8C676966FCDCDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79C3244AE3E326D2B9C4A85F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = YuyaIcon;
+				CODE_SIGN_ENTITLEMENTS = Yuya/Yuya.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CArchive/include",
+				);
+				INFOPLIST_FILE = Yuya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-larchive",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdy.yuya;
+				PRODUCT_NAME = Yuya;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(SRCROOT)/Sources/CArchive/include";
+				SWIFT_VERSION = 6.0;
+			};
+			name = AppStore;
+		};
+		943CD22442F9D6349286B636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = YuyaIcon;
+				CODE_SIGN_ENTITLEMENTS = Yuya/Yuya.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Sources/CArchive/include",
+				);
+				INFOPLIST_FILE = Yuya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-larchive",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gdy.yuya;
+				PRODUCT_NAME = Yuya;
+				SDKROOT = macosx;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(SRCROOT)/Sources/CArchive/include";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		CF19CA4EBC2DC302AEEDD081 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF45E3BE1C6388A64845F8D /* Build configuration list for PBXNativeTarget "Yuya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943CD22442F9D6349286B636 /* Release */,
+				42C36D83A77C838C088DC905 /* Debug */,
+				79C3244AE3E326D2B9C4A85F /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CACA528D571587C98A211E34 /* Build configuration list for PBXProject "Yuya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0431540C8C676966FCDCDD /* Debug */,
+				5D6A307B7A37EECDAECA1DF8 /* Release */,
+				CF19CA4EBC2DC302AEEDD081 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F1B0EF745DFBB20A677D9B9 /* Project object */;
+}

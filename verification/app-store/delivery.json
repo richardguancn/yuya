@@ -1,0 +1,9 @@
+{
+  "version": "1.3",
+  "build": "6",
+  "artifact": "dist/mac-app-store/Yuya-1.3-local-check.xcarchive.zip",
+  "sha256": "452aa1d4b766e32d0fb5116195ab04c12cab19c485b21eac668383b951a7fd7b",
+  "unpacked_check": "passed",
+  "uploadable": false,
+  "uploaded_to_apple": false
+}

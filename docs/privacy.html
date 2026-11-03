@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - 鱼压 (YUYA)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --primary: #38bdf8;
+        --border: #334155;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>鱼压 (YUYA) 隐私政策</h1>
+    <div class="date">适用版本：1.3 | 更新日期：2026 年 11 月</div>
+
+    <h2>1. 本地处理与文件安全</h2>
+    <p>鱼压（YUYA）是一款面向 macOS 的本地文件压缩与解压工具。应用的所有核心功能完全在您的 Mac 本机离线运行：</p>
+    <ul>
+      <li>应用严格遵守 <strong>macOS App Sandbox</strong>（应用沙盒）规范，不申请网络连接权限（无 <code>com.apple.security.network.client</code>）。</li>
+      <li>不收集、不上传任何文件、文件名或文件内容至任何外部服务器。</li>
+      <li>通过系统文件选择窗口或拖放传入的文件仅用于您主动发起的压缩或解压操作。解压结果仅输出至您指定的目录。</li>
+    </ul>
+
+    <h2>2. 本机偏好与历史记录</h2>
+    <p>为了提供良好的使用体验，鱼压在您的本机仅持久化以下必要数据：</p>
+    <ul>
+      <li><strong>使用偏好</strong>：如压缩等级（更快、均衡、更小）、杂项过滤选项等偏好配置（保存在沙盒内 UserDefaults）。</li>
+      <li><strong>最近完成记录</strong>：在本地保存最多 30 条最近处理记录（包含文件名称、保存位置路径及耗时）。应用利用系统安全范围凭据（Security-Scoped Bookmarks）保留必要定位权限，供您重新打开应用后快速在访达中定位文件。</li>
+      <li><strong>随时清理</strong>：您可以在应用内的“最近记录”界面随时点击“清空记录”，彻底清除本地记录和访问凭据，此操作不会影响您的源文件与生成结果。</li>
+    </ul>
+
+    <h2>3. 不收集个人信息与第三方 SDK</h2>
+    <p>鱼压承诺：</p>
+    <ul>
+      <li>不收集任何用户身份信息、设备唯一标识、诊断数据或行为分析数据。</li>
+      <li>不接入任何第三方广告、追踪或统计分析 SDK。</li>
+      <li>不请求相机、麦克风、通讯录、日历、照片库或地理位置等隐私系统权限。</li>
+    </ul>
+
+    <h2>4. 联系我们与技术支持</h2>
+    <p>如果您对本隐私政策或鱼压的数据处理方式有任何疑问，可通过以下方式联系我们：</p>
+    <ul>
+      <li>开发者 GitHub：<a href="https://github.com/richardguancn/" target="_blank" rel="noopener">https://github.com/richardguancn/</a></li>
+      <li>技术支持与问题反馈：<a href="https://github.com/richardguancn/Jie2/issues" target="_blank" rel="noopener">GitHub Issues 反馈通道</a></li>
+    </ul>
+
+    <div class="footer">
+      © 2026 Dengyu Guan. 保留所有权利。
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+2026-10-27 08:43:10.052 xcodebuild[76929:70515914] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/6h/rpqn03ds5sb4_jmp35lcbl8h0000gr/T/Yuya_2026-10-27_08-43-10.051.xcdistributionlogs".
+2026-10-27 08:43:13.484 xcodebuild[76929:70515915]  IDEDistribution: App Store Connect request for store configuration failed for account (null) (Account "(null)": Unable to authenticate with App Store Connect (Error Domain=CDWebService Code=1085 "No provider associated with App Store Connect user" UserInfo={NSLocalizedRecoverySuggestion=, NSLocalizedFailureReason=, NSLocalizedDescription=No provider associated with App Store Connect user}))
+Exported Yuya to: /Users/gdy/Documents/My/App/ai-learning/yuya/build/AppStore-export
+** EXPORT SUCCEEDED **
+

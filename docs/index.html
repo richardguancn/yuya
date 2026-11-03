@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鱼压 (YUYA) - 优雅轻巧的 Mac 本地压缩解压工具</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --border: #e2e8f0;
+      --accent: #f97316;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #38bdf8;
+        --border: #334155;
+        --accent: #fb923c;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .header p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .feature-item {
+      padding: 16px;
+      background: var(--bg);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .feature-item h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+    .feature-item p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>鱼压 · YUYA</h1>
+    <p>拖入文件，轻松压缩与解压。全程在您的 Mac 本机完成，纯粹、安全、轻巧。</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>核心特性</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>📦 打包分享</h3>
+          <p>支持多文件合成 ZIP 格式，提供更快、均衡、更小三种压缩率选择。</p>
+        </div>
+        <div class="feature-item">
+          <h3>🔍 解压与预览</h3>
+          <p>支持 ZIP、7Z、RAR、TAR、GZIP 等常见格式；无需解压即可快速查看包内目录。</p>
+        </div>
+        <div class="feature-item">
+          <h3>🔒 隐私与沙盒</h3>
+          <p>完全遵循 macOS 沙盒安全机制，不申请网络权限，零数据收集与上传。</p>
+        </div>
+        <div class="feature-item">
+          <h3>⚡️ 原生轻盈</h3>
+          <p>基于 Swift 原生开发，适配 Apple 芯片与 Intel 架构，启动迅速，不占内存。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>技术支持与帮助</h2>
+      <p>如果您在使用过程中遇到任何问题，欢迎通过以下渠道与我们联系或提交反馈：</p>
+      <ul>
+        <li><strong>问题与建议反馈</strong>：访问 <a href="https://github.com/richardguancn/Jie2/issues" target="_blank" rel="noopener">GitHub Issues</a> 提交工单（标题请标注 [Yuya]）。</li>
+        <li><strong>开发者主页</strong>：<a href="https://github.com/richardguancn/" target="_blank" rel="noopener">https://github.com/richardguancn/</a></li>
+        <li><strong>隐私政策</strong>：查阅详细的 <a href="privacy.html">鱼压隐私政策说明</a>。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Dengyu Guan. All rights reserved. · <a href="privacy.html">隐私政策</a>
+  </div>
+</body>
+</html>
