@@ -15,6 +15,7 @@
 
 <p align="center">
   <a href="https://github.com/richardguancn/yuya"><img src="https://img.shields.io/badge/GitHub-richardguancn%2Fyuya-blue?logo=github" alt="GitHub Repository"></a>
+  <a href="https://github.com/richardguancn/yuya/releases/latest"><img src="https://img.shields.io/github/v/release/richardguancn/yuya?logo=github&color=brightgreen" alt="Latest Release"></a>
   <img src="https://img.shields.io/badge/platform-macOS%2014.0%2B-lightgrey" alt="Platform">
   <img src="https://img.shields.io/badge/Swift-6.0-orange?logo=swift" alt="Swift">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
